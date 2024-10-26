@@ -1,0 +1,47 @@
+.firstContainer{
+    background-color: #020A19;
+    position: relative;
+    top: 69px;
+ 
+
+}
+.innerContainer{
+
+    background-color: #020A19;
+    max-width: 1300px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  display: flex;;
+  align-items: center;
+  justify-content: space-between;
+}
+.imageContainer {
+width: 50%;   
+}
+.imageContainer img{
+    width: 100%;
+   object-fit: cover;
+   
+}
+.textContainer{
+    width: 50%;
+    color: #ffff;
+    max-width: 498px;
+ text-align: left;
+
+}
+.textContainer h2{
+    font-size: 42px;
+    line-height: 53px;
+}
+.fieldContainer{
+    display: flex;
+}
+.fieldContainer input{
+    width: 65%;
+    margin-right: 8px;
+}
+.fieldContainer button{
+    width: 35%;
+}

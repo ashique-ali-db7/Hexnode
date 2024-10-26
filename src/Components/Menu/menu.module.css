@@ -1,0 +1,74 @@
+@media (max-width: 1280px) {
+    .mobileMenu {
+        position: absolute;
+       right: 0;
+  width:50%;
+        background: white; /* Background color for the menu */
+        border: 1px solid #ccc; /* Optional border */
+        z-index: 1000;
+    height: 100%;
+    }
+    .mobileMenu ul {
+        list-style-type: none;
+        padding: 10px;
+    }
+    .mobileMenu li {
+        margin: 10px 0;
+    }
+    .mobileMenu a {
+        text-decoration: none;
+        color: #3498db; /* Link color */
+    }
+}
+@media (min-width: 1280px) {
+    .mobileMenu {
+      display: none;
+    }
+   
+}
+@media (max-width: 640px) {
+    .mobileMenu {
+      width: 100%;
+      position: absolute;
+      right: 0;
+       background: white; /* Background color for the menu */
+       border: 1px solid #ccc; /* Optional border */
+       z-index: 1000;
+    }
+   
+}
+.topPart {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #ccc; 
+    height: 65px;
+    box-sizing: border-box;
+}
+.topPart img{
+cursor: pointer;
+}
+.bottomPart {
+    padding: 30px;
+}
+.desktopButton {
+width: 100%;
+    padding: 12px 26px;
+    background-color: #DD0735; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.desktopLoginButton {
+    width: 100%;
+        padding: 12px 26px;
+        background-color: #ffff; /* Button color */
+     margin: 20px 0px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+    }
