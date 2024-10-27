@@ -4,20 +4,25 @@
   overflow-x: hidden;
   width: 100%;
 } */
- *{
+* {
   box-sizing: border-box;
- }
+}
 body {
   margin: 0;
-  font-family:__Mulish_b53927,__Mulish_Fallback_b53927;
+  font-family: __Mulish_b53927, __Mulish_Fallback_b53927;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
+.displayNone {
+  display: none;
+}
+.hide {
+  display: none;
+}

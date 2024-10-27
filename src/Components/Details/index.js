@@ -1,14 +1,54 @@
 import styles from "./details.module.css";
-import DetailsImage from "./../../Assets/images/effortless-kiosk-deployement-image.webp";
+import { details } from "../../dummyData";
+import { useState } from "react";
+import WindowSize from "../../Hooks/windowSize";
 const Details = () => {
+  const [active, setActive] = useState(0);
+  const [data, setData] = useState(details[0]);
+  const width = WindowSize();
+  const clickHandler = (idx, item) => {
+    setActive(idx);
+    setData(item);
+  };
   return (
     <div className={styles.container}>
       <div className={styles.detailsWrapper}>
         <h2>What additional possibilities does the Kiosk mode offer?</h2>
-        <div className={styles.contentWrapper}>
-          <img src={DetailsImage} />
-          <div className={styles.content}>
+        <div className={width > 990 ? styles.dataWrapper : ""}>
+          {width > 990 && (
+            <div className={styles.imageWrapper}>
+              <img src={data.image} alt={data.title} />
+            </div>
+          )}
+          <div className={styles.contentWrapper}>
+            {details.map((item, idx) => (
+              <div
+                className={styles.content}
+                key={idx}
+                onClick={() => clickHandler(idx, item)}
+              >
+                {width <= 990 && (
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className={active === idx ? "" : "displayNone"}
+                  />
+                )}
 
+                <div className={styles.textWrapper}>
+                  <h3>{item.title}</h3>
+                  <p className={active === idx ? "" : "displayNone"}>
+                    {item.description}
+                  </p>
+                  <p
+                    id={styles.free}
+                    className={active === idx ? "" : "displayNone"}
+                  >
+                    TRY FOR FREE
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

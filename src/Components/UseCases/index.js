@@ -5,7 +5,8 @@ import TabContent from "./TabContent";
 import WindowSize from "../../Hooks/windowSize";
 const UseCases = () => {
   const [activeTab, setActiveTab] = useState(1);
-  const isMobile = WindowSize();
+  const width = WindowSize();
+  const isMobile = width <= 640;
   return (
     <div className={styles.container}>
       <h1>Specific kiosk modes for unique use cases</h1>

@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 
 const WindowSize = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 640);
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 640);
+    const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return isMobile;
+  return width;
 };
 
 export default WindowSize;
