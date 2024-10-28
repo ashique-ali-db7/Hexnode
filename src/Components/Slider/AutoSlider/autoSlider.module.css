@@ -1,0 +1,54 @@
+/* Slider container styling */
+.sliderContainer {
+  position: relative;
+  overflow: hidden;
+  width: 88%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 45px;
+}
+
+/* Gradient effect for edges */
+.gradientLeft,
+.gradientRight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%; /* Adjust width for the fade effect */
+  pointer-events: none;
+  z-index: 1; /* Place gradients above images */
+}
+
+.gradientLeft {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #f7f7f7,
+    /* Starting color */ rgba(247, 247, 247, 0) /* Transparent */
+  );
+}
+
+.gradientRight {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    #f7f7f7,
+    /* Starting color */ rgba(247, 247, 247, 0) /* Transparent */
+  );
+}
+
+/* Styling for each image container */
+.imageContainer {
+  padding: 10px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional styling for rounded corners */
+  transition: transform 0.3s ease;
+}
+
+.imageContainer img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}

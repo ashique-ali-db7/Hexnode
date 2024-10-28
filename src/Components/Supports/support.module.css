@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 0px;
+}
+.innerContainer {
+  width: 88%;
+
+  text-align: center;
+}
+.innerContainer h1 {
+  margin-bottom: 60px;
+}
+
+/* imageGrid.module.css */
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 columns by default */
+}
+
+.imageContainer {
+  overflow: hidden; /* Prevent overflow */
+  border-radius: 8px; /* Optional: for rounded corners */
+  padding: 0 10px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for screens < 1024px */
+    gap: 10px 70px;
+  }
+  .imageContainer {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for screens < 760px */
+    gap: 10px 0px;
+  }
+  .imageContainer {
+    padding: 0 80px;
+  }
+}

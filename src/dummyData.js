@@ -8,6 +8,26 @@ import Customized from "./Assets/images//customized-interface-image.webp";
 import Power from "./Assets/images/power-up-protection-image.webp";
 import Secure from "./Assets/images/secure-app-ecosystem.webp";
 import Easy from "./Assets/images/easy-to-use-interface-image.webp";
+import Robinson from "./Assets/images/chris-robinson.webp";
+import Modrak from "./Assets/images/justin-modrak.webp";
+import Dailbor from "./Assets/images/dalibor-kruljac.webp";
+import Costco from "./Assets/images/company/costco.svg";
+import Group1 from "./Assets/images/company/group1-automotive.webp";
+import Hilit0n from "./Assets/images/company/hilton.svg";
+import Lowes from "./Assets/images/company/lowes.svg";
+import Marriott from "./Assets/images/company/marriott-intl.svg";
+import Merck from "./Assets/images/company/merck.svg";
+import Polaris from "./Assets/images/company/polaris.svg";
+import Saic from "./Assets/images/company/saic.svg";
+import Wolt from "./Assets/images/company/wolt.svg";
+
+import Amazon from "./Assets/images/supports/amazon-fire.webp";
+import AndroidTv from "./Assets/images/supports/android-tv.svg";
+import Android from "./Assets/images/supports/android.svg";
+import Apple from "./Assets/images/supports/apple-tv.svg";
+import Ios from "./Assets/images/supports/ios.svg";
+import Windows from "./Assets/images/supports/windows.svg";
+
 export const tabs = [
   {
     id: 1,
@@ -102,4 +122,45 @@ export const details = [
     description:
       "Give your end-users the power to control their devices without overwhelming them with options. An intuitive interface to let them access only the essential settings they need. Make it easy for them to unlock the full potential of your devices hassle-free.",
   },
+];
+
+export const cardsData = [
+  {
+    image: Modrak,
+    title: "Hexnode is of great value. Works great with Android and iOS!",
+    name: "Justin Modrak",
+    company: "Technology Coordinator",
+  },
+  {
+    image: Dailbor,
+    title:
+      "Most complete MDM solution I found, and I tested many of them, including major names",
+    name: "Dalibor Kruljac",
+    company: "KAMELEYA LTD",
+  },
+  {
+    image: Robinson,
+    title: "It seemed to be in-line with everything we were looking at.",
+    name: "Chris Robinson",
+    company: "Executive Account Manager, NCS",
+  },
+];
+export const companyImages = [
+  Costco,
+  Group1,
+  Hilit0n,
+  Lowes,
+  Marriott,
+  Merck,
+  Polaris,
+  Saic,
+  Wolt,
+];
+export const supportedImages = [
+  Android,
+  Windows,
+  Ios,
+  AndroidTv,
+  Apple,
+  Amazon,
 ];

@@ -1,77 +1,71 @@
 /* src/components/Header.module.css */
 .container {
-background-color:  #020A19;
-position: fixed;
-width: 100%;
-height: 69px;
-display: flex;
-align-items: center;
-padding: 8px 0px;
-box-sizing: border-box;
-z-index: 2;
-
+  background-color: #020a19;
+  position: fixed;
+  width: 100%;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  padding: 8px 0px;
+  box-sizing: border-box;
+  z-index: 3;
 }
 .header {
-    width: 88%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    background-color: #020A19;
- 
+  width: 88%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: #020a19;
 }
 
 .headerContent {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-   
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
-.headerContent h2{
-       margin: 0; 
-       color: #fff;
+.headerContent h2 {
+  margin: 0;
+  color: #fff;
 }
 .logo {
-    width: 50px; /* Adjust as needed */
-    height: auto;
+  width: 50px; /* Adjust as needed */
+  height: auto;
 }
 
 .desktopButton {
-    display: none; /* Hide button by default */
-    padding: 10px 26px;
-    background-color: #DD0735; /* Button color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
+  display: none; /* Hide button by default */
+  padding: 10px 26px;
+  background-color: #dd0735; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 .hamburger {
-    display: block; /* Hide hamburger by default */
-    flex-direction: column;
-    cursor: pointer;
-    
+  display: block; /* Hide hamburger by default */
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .bar {
-    height: 3px;
-    width: 25px;
-    background-color: #fff; /* Hamburger color */
-    margin: 5px 0;
-    border-radius: 13%;
+  height: 3px;
+  width: 25px;
+  background-color: #fff; /* Hamburger color */
+  margin: 5px 0;
+  border-radius: 13%;
 }
 
 /* Media Queries */
 @media (min-width: 1280px) {
-    .desktopButton {
-        display: block; /* Show button on desktop */
-    }
-    .hamburger {
-        display: none; /* Hide hamburger on desktop */
-    }
+  .desktopButton {
+    display: block; /* Show button on desktop */
+  }
+  .hamburger {
+    display: none; /* Hide hamburger on desktop */
+  }
 }
-
-
