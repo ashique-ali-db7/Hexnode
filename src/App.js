@@ -31,9 +31,7 @@ function App() {
       <UseCases />
       <Details />
       <SimpleSlider />
-
       <Menu isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen} />
-
       <Support />
       <Signup />
     </main>

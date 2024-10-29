@@ -1,61 +1,60 @@
-.container{
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
+.container {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
 }
-.details{
-   flex: 5.5;
-    padding-right: 40px;
-    text-align: left;
+.details {
+  flex: 5.5;
+  padding-right: 40px;
+  text-align: left;
 }
-.details h2{
-   padding-bottom: 0px 0px 40px;
-   line-height: 40px;
-   font-size: 28px;
-   font-weight: 700;
-   margin: 0;
- }
- .details ul{
-   list-style-type: none;
-   padding-left: 0;
-  }
-  .details li{
+.details h2 {
+  padding-bottom: 0px 0px 40px;
+  line-height: 40px;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+.details ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.details li {
   display: flex;
   align-items: baseline;
   gap: 8px;
-
-   }
-   .details p{
-   padding-left: 10px;
-   line-height: 28px;
-   font-size: 18px;
-   font-weight: 400;
-     }
+}
+.details p {
+  padding-left: 10px;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+}
 .imageContainer {
-   flex: 4.5;
-    display: flex;
-    justify-content: center; /* Center the image if needed */
-    align-items: flex-start;
+  flex: 4.5;
+  display: flex;
+  justify-content: center; /* Center the image if needed */
+  align-items: flex-start;
 }
 
 .imageContainer img {
-    max-width: 100%; /* Make the image take up the full width of its container */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 10px;
+  max-width: 100%; /* Make the image take up the full width of its container */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 10px;
 }
 
 @media (max-width: 1020px) {
-    .container{
-        flex-direction: column;
-        justify-content: flex-start;
-    }
- .imageContainer{
-    order: -1; 
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .imageContainer {
+    order: -1;
     justify-content: flex-start;
     margin-bottom: 30px;
- }
- .imageContainer img{
-   width:460px;
- }
-
+  }
+  .imageContainer img {
+    width: 460px;
+  }
 }

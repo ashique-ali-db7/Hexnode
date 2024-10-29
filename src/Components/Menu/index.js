@@ -19,6 +19,7 @@ const Menu = ({ isMenuOpen, setMenuOpen }) => {
                   alt="close icon"
                   width={25}
                   onClick={handleClose}
+                  aria-label="Close"
                 />
               </div>
               <div className={styles.bottomPart}>
