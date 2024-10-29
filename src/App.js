@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import logo from "./logo.svg";
 import Header from "./Components/Header";
@@ -13,6 +13,17 @@ import Signup from "./Components/SignUp";
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isMenuOpen]);
   return (
     <main className="App">
       <Header setMenuOpen={setMenuOpen} />
@@ -20,7 +31,9 @@ function App() {
       <UseCases />
       <Details />
       <SimpleSlider />
+
       <Menu isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen} />
+
       <Support />
       <Signup />
     </main>

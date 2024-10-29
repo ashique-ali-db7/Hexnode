@@ -1,11 +1,11 @@
 import styles from "./details.module.css";
 import { details } from "../../dummyData";
 import { useState } from "react";
-import WindowSize from "../../Hooks/windowSize";
+import useWindowSize from "../../Hooks/windowSize";
 const Details = () => {
   const [active, setActive] = useState(0);
   const [data, setData] = useState(details[0]);
-  const width = WindowSize();
+  const width = useWindowSize();
   const clickHandler = (idx, item) => {
     setActive(idx);
     setData(item);
@@ -13,7 +13,7 @@ const Details = () => {
   return (
     <div className={styles.container}>
       <div className={styles.detailsWrapper}>
-        <h2>What additional possibilities does the Kiosk mode offer?</h2>
+        <h1>What additional possibilities does the Kiosk mode offer?</h1>
         <div className={width > 990 ? styles.dataWrapper : ""}>
           {width > 990 && (
             <div className={styles.imageWrapper}>

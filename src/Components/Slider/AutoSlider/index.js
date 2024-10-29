@@ -13,6 +13,20 @@ const AutoSlider = () => {
     autoplaySpeed: 500, // Adjust for 1-second interval per image
     cssEase: "ease-in-out",
     arrows: false, // Hide default arrows
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
   };
 
   return (

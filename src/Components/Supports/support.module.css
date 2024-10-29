@@ -6,11 +6,13 @@
 }
 .innerContainer {
   width: 88%;
-
+  max-width: 1300px;
   text-align: center;
 }
 .innerContainer h1 {
   margin-bottom: 60px;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 /* imageGrid.module.css */
@@ -35,10 +37,10 @@
 @media (max-width: 1024px) {
   .gridContainer {
     grid-template-columns: repeat(3, 1fr); /* 3 columns for screens < 1024px */
-    gap: 10px 70px;
+    gap: 10px 50px;
   }
   .imageContainer {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 
@@ -48,6 +50,6 @@
     gap: 10px 0px;
   }
   .imageContainer {
-    padding: 0 80px;
+    padding: 0 60px;
   }
 }

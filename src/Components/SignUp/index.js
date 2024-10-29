@@ -7,10 +7,10 @@ const Signup = () => {
         <h1>Sign up and try Hexnode free for 14 days!</h1>
         <div className={styles.fieldContainer}>
           <input type="text" placeholder="Your Work Email" />
-          <button>GET STARTED NOW!</button>
+          <button>GET STARTED</button>
         </div>
         <p className={styles.paragraph}>
-          No credit cards required.<a>Request a demo</a>
+          No credit cards required. <a>Request a demo</a>
         </p>
       </div>
       <footer className={styles.footer}>

@@ -9,7 +9,9 @@
   padding: 8px 0px;
   box-sizing: border-box;
   z-index: 3;
+  transition: background-color 0.8s ease;
 }
+
 .header {
   width: 88%;
   margin: 0 auto;
@@ -18,8 +20,15 @@
   align-items: center;
   height: 100%;
   background-color: #020a19;
+  transition: background-color 0.8s ease;
 }
-
+.white {
+  background-color: #fff;
+}
+.container:hover,
+.container:hover .header {
+  background-color: #fff;
+}
 .headerContent {
   display: flex;
   align-items: center;
@@ -31,19 +40,22 @@
   color: #fff;
 }
 .logo {
-  width: 50px; /* Adjust as needed */
-  height: auto;
+  width: 121px; /* Adjust as needed */
+  height: 100%;
 }
 
 .desktopButton {
   display: none; /* Hide button by default */
-  padding: 10px 26px;
+
   background-color: #dd0735; /* Button color */
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
+  width: 191px;
+  height: 44px;
+  font-size: 15px;
 }
 
 .hamburger {
@@ -59,7 +71,9 @@
   margin: 5px 0;
   border-radius: 13%;
 }
-
+.barScroll {
+  background-color: #020a19;
+}
 /* Media Queries */
 @media (min-width: 1280px) {
   .desktopButton {
@@ -67,5 +81,9 @@
   }
   .hamburger {
     display: none; /* Hide hamburger on desktop */
+  }
+  .container:hover,
+  .container:hover .header {
+    background-color: #fff;
   }
 }

@@ -2,10 +2,10 @@ import { useState } from "react";
 import Tabs from "./Tabs";
 import styles from "./useCases.module.css";
 import TabContent from "./TabContent";
-import WindowSize from "../../Hooks/windowSize";
+import useWindowSize from "../../Hooks/windowSize";
 const UseCases = () => {
   const [activeTab, setActiveTab] = useState(1);
-  const width = WindowSize();
+  const width = useWindowSize();
   const isMobile = width <= 640;
   return (
     <div className={styles.container}>

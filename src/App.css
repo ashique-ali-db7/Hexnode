@@ -1,3 +1,16 @@
+:root {
+  --dark-bg: #020a19;
+  --secondary-bg: #1a1c2b;
+  --button-bg: #dd0735;
+  --text-color: #fff;
+  --placeholder-color: #c7c0c0;
+}
 /* .App {
   overflow-x: hidden;
 } */
+input:focus {
+  outline: none;
+}
+.no-scroll {
+  overflow: hidden;
+}

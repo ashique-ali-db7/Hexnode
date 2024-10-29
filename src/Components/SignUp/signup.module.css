@@ -19,20 +19,33 @@
   color: #ffffff;
   text-align: center;
 }
+.innerContainer h1 {
+  font-size: 42px;
+  line-height: 38px;
+  font-weight: 700;
+  margin-top: 90px;
+}
 .fieldContainer {
   display: flex;
   height: 53px;
 }
 .fieldContainer input {
   margin-right: 8px;
-  border-radius: 4px;
-  width: 280px;
+  border: none;
+  width: 324px;
   padding: 0 10px;
+  font-size: 17px;
+  border-radius: 4px;
 }
+
+.fieldContainer input::placeholder {
+  color: var(--placeholder-color);
+}
+
 .fieldContainer button {
   background-color: #dd0735;
   width: 210px;
-
+  font-size: 17px;
   color: white;
   border: none;
   border-radius: 4px;
@@ -60,6 +73,13 @@
 .paragraph {
   margin-top: 20px; /* Space above the paragraph */
   text-align: center; /* Center text if needed */
+  margin-bottom: 90px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #556575;
+}
+.paragraph a {
+  color: var(--button-bg);
 }
 
 /* Responsive styles */
@@ -68,7 +88,9 @@
     flex-direction: column; /* Stack input and button on mobile */
     align-items: stretch; /* Allow the input and button to stretch full width */
   }
-
+  .innerContainer h1 {
+    font-size: 30px;
+  }
   .textField {
     margin-right: 0; /* Remove right margin */
     margin-bottom: 10px; /* Space below input on mobile */
@@ -110,11 +132,14 @@
 
 .footer {
   background-color: #f2f2f2; /* Optional background color */
-  padding: 20px;
+  padding: 15px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #556575;
 }
 .footer div {
   width: 88%;
@@ -129,14 +154,12 @@
   display: flex; /* Display items in a row */
   justify-content: center; /* Center the list items horizontally */
   align-items: center;
-  gap: 15px; /* Space between each list item */
+  gap: 4px;
 }
 /* .footerList p {
   margin: 0;
 } */
 .footerList li {
-  font-size: 16px;
-  color: #333; /* Text color */
   cursor: pointer;
 }
 
