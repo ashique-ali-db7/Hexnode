@@ -1,8 +1,8 @@
 # Hexnode
 
 ## Steps to run project
-1.git clone https://github.com/your-username/your-project-name.git](https://github.com/ashique-ali-db7/Hexnode.git
-2.cd Hexnode
+1.git clone https://github.com/your-username/your-project-name.git](https://github.com/ashique-ali-db7/Hexnode.git<br>
+2.cd Hexnode  
 3.npm install
 4.npm start
 
