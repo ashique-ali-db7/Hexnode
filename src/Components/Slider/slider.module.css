@@ -180,5 +180,20 @@
   .company {
     margin-bottom: 15px;
     text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .name {
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .cardContent h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #333;
   }
 }
