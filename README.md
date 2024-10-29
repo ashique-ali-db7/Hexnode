@@ -1,10 +1,10 @@
 # Hexnode
 
 ## Steps to run project
-git clone https://github.com/your-username/your-project-name.git](https://github.com/ashique-ali-db7/Hexnode.git
-cd Hexnode
-npm install
-npm start
+1.git clone https://github.com/your-username/your-project-name.git](https://github.com/ashique-ali-db7/Hexnode.git
+2.cd Hexnode
+3.npm install
+4.npm start
 
 ## Approach
 The project was designed with a responsive-first approach to ensure it adapts to various screen sizes.
