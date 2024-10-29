@@ -1,0 +1,34 @@
+.fullContent {
+  height: 85%;
+  overflow-y: scroll;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  padding: 40px 40px 0px 40px;
+}
+
+.fullContent::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin-bottom: 100px;
+}
+.featuredArticle {
+    color: #fff;
+  
+    border-radius: 5px;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  .featuredArticle h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+  }

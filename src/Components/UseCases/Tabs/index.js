@@ -1,19 +1,11 @@
-import { useRef } from "react";
 import { tabs } from "../../../dummyData";
 import styles from "./tabs.module.css";
 import TabContent from "../TabContent";
 import Next from "../../../Assets/images/next-arrow-icon-black.svg";
 import Up from "../../../Assets/images/arrowupW.png";
 const Tabs = ({ activeTab, setActiveTab, isMobile }) => {
-  const accordionRefs = useRef([]);
   const handleAccordionClick = (id) => {
     setActiveTab(activeTab === id && isMobile ? null : id);
-    if (accordionRefs.current[id] && isMobile) {
-      accordionRefs.current[id].scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
   };
 
   return (
@@ -48,10 +40,7 @@ const Tabs = ({ activeTab, setActiveTab, isMobile }) => {
             </button>
 
             {isMobile && tab.id === activeTab && (
-              <TabContent
-                activeTab={activeTab}
-                ref={(el) => (accordionRefs.current[tab.id] = el)}
-              />
+              <TabContent activeTab={activeTab} />
             )}
           </div>
         ))}
