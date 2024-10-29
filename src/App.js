@@ -9,6 +9,7 @@ import Details from "./Components/Details";
 import SimpleSlider from "./Components/Slider";
 import Support from "./Components/Supports";
 import Signup from "./Components/SignUp";
+import Popup from "./Components/Chat";
 
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -34,6 +35,7 @@ function App() {
       <Menu isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen} />
       <Support />
       <Signup />
+      <Popup />
     </main>
   );
 }
