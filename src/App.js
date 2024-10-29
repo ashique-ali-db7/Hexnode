@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import logo from "./logo.svg";
 import Header from "./Components/Header";
 import Menu from "./Components/Menu";
 import MainContent from "./Components/MainContent";
@@ -32,9 +31,9 @@ function App() {
       <UseCases />
       <Details />
       <SimpleSlider />
-      <Menu isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen} />
       <Support />
       <Signup />
+      <Menu isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen} />
       <Popup />
     </main>
   );

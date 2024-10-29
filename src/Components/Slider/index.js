@@ -51,15 +51,7 @@ function SimpleSlider() {
     autoplaySpeed: 7000,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       arrows: false,
-    //       dots: true,
-    //     },
-    //   },
-    // ],
+  
   };
 
   return (

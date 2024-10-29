@@ -10,7 +10,7 @@ const Signup = () => {
           <button>GET STARTED</button>
         </div>
         <p className={styles.paragraph}>
-          No credit cards required. <a>Request a demo</a>
+          No credit cards required. <a href="#">Request a demo</a>
         </p>
       </div>
       <footer className={styles.footer}>

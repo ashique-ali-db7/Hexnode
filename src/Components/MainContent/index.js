@@ -19,7 +19,7 @@ const MainContent = () => {
           </div>
 
           <div className={styles.imageContainer}>
-            <img src={desktopImage} />
+            <img src={desktopImage} alt="Desktop" />
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@ const MainContent = () => {
       <div className={styles.secondContainer}>
         <div className={styles.secondInner}>
           <div className={styles.item}>
-            <img src={idc} alt="Image 1" />
+            <img src={idc} alt="Hexnode" />
             <p>
               Hexnode is listed as a leader and a major player in IDC
               MarketScape UEM Vendors Assessment Reports 2024.
@@ -36,7 +36,7 @@ const MainContent = () => {
           <div className={styles.verticalLine}></div>
 
           <div className={styles.item}>
-            <img src={gartner} alt="Image 2" />
+            <img src={gartner} alt="Hexnode" />
             <p>
               Hexnode mentioned as a Notable Vendor in Midmarket Context: Magic
               Quadrant for Unified Endpoint Management tools 2022.
@@ -45,7 +45,7 @@ const MainContent = () => {
           <div className={styles.verticalLine}></div>
 
           <div className={styles.item}>
-            <img src={forrester} alt="Image 3" />
+            <img src={forrester} alt="Forrester" />
             <p>
               Forrester includes Hexnode as a Notable vendor in The Unified
               Endpoint Management Landscape, Q3 2023.

@@ -16,8 +16,8 @@
     position: fixed;
     right: 0;
     width: 50%;
-    background: white; /* Background color for the menu */
-    border: 1px solid #ccc; /* Optional border */
+    background: #fff;
+    border: 1px solid #ccc;
     top: 0;
     height: 100vh;
     z-index: 4;

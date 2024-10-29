@@ -80,9 +80,9 @@
 }
 .divider {
   width: 100%;
-  height: 2px; /* Adjust thickness */
-  background-color: #f7f7f7; /* Adjust color */
-  margin: 10px 0; /* Adjust spacing */
+  height: 2px;
+  background-color: #f7f7f7;
+  margin: 10px 0;
   border: none;
 }
 .arrowImage {
@@ -95,7 +95,7 @@
   justify-content: center;
   width: 56px;
   height: 56px;
-  background-color: #ffff; /* Background color if needed */
+  background-color: #ffff;
   border-radius: 12px;
   cursor: pointer;
 }
@@ -103,14 +103,14 @@
   right: 10px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); /* Centers vertically */
+  transform: translateY(-50%);
 }
 
 .prev {
   left: 10px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); /* Centers vertically */
+  transform: translateY(-50%);
   z-index: 2;
 }
 .cardContainer {
@@ -119,15 +119,15 @@
 @media (max-width: 1140px) {
   .next {
     position: absolute;
-    bottom: 0; /* Aligns to the bottom of the container */
-    left: 50%; /* Start at 50% from the left */
+    bottom: 0;
+    left: 50%;
     top: 105%;
-    transform: translateX(70%); /* Centers vertically */
+    transform: translateX(70%);
   }
 
   .prev {
     position: absolute;
-    left: 50%; /* Start at 50% from the left */
+    left: 50%;
     top: 105%;
     transform: translateX(-70%);
   }
@@ -135,16 +135,16 @@
 @media (max-width: 764px) {
   .next {
     position: absolute;
-    bottom: 0; /* Aligns to the bottom of the container */
-    left: 45%; /* Start at 50% from the left */
+    bottom: 0;
+    left: 45%;
     top: 100%;
   }
 
   .prev {
     position: absolute;
-    left: 43%; /* Start at 50% from the left */
+    left: 43%;
     top: 100%;
-    transform: translateX(-70%); /* Centers vertically */
+    transform: translateX(-70%);
   }
 
   .cardData {

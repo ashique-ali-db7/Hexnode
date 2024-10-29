@@ -5,14 +5,14 @@ import { companyImages } from "../../../dummyData";
 
 const AutoSlider = () => {
   const settings = {
-    infinite: true, // Enable infinite scroll for a continuous loop
-    speed: 800, // Set transition speed
-    slidesToShow: 7, // Number of visible images at a time
+    infinite: true, 
+    speed: 800, 
+    slidesToShow: 7, 
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 500, // Adjust for 1-second interval per image
+    autoplaySpeed: 500,
     cssEase: "ease-in-out",
-    arrows: false, // Hide default arrows
+    arrows: false, 
     responsive: [
       {
         breakpoint: 1024,

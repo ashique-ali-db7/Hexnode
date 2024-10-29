@@ -20,7 +20,7 @@
 .content {
   display: flex;
   cursor: pointer;
-  border-bottom: 1px solid #f7f7f7; /* Adjust color */
+  border-bottom: 1px solid #f7f7f7; 
   margin-bottom: 16px 0;
 }
 .contentWrapper {
@@ -48,7 +48,7 @@
 .textWrapper {
   text-align: left;
   width: 100%;
-  border-bottom: 1px solid #f7f7f7; /* Adjust color */
+  border-bottom: 1px solid #f7f7f7; 
 }
 #free {
   color: #dd0735;
@@ -94,7 +94,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #f7f7f7; /* Adjust color */
+    border-bottom: 1px solid #f7f7f7; 
   }
   .content img {
     width: 340px;

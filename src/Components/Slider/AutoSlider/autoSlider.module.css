@@ -14,9 +14,9 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 10%; /* Adjust width for the fade effect */
+  width: 10%;
   pointer-events: none;
-  z-index: 1; /* Place gradients above images */
+  z-index: 1;
 }
 
 .gradientLeft {
@@ -45,10 +45,10 @@
 .imageContainer img {
   width: 100%;
   height: auto;
-  border-radius: 8px; /* Optional styling for rounded corners */
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
 .imageContainer img:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.05);
 }

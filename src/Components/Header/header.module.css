@@ -40,14 +40,14 @@
   color: #fff;
 }
 .logo {
-  width: 121px; /* Adjust as needed */
+  width: 121px; 
   height: 100%;
 }
 
 .desktopButton {
-  display: none; /* Hide button by default */
+  display: none; 
 
-  background-color: #dd0735; /* Button color */
+  background-color: #dd0735; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -59,7 +59,7 @@
 }
 
 .hamburger {
-  display: block; /* Hide hamburger by default */
+  display: block; 
   flex-direction: column;
   cursor: pointer;
 }
@@ -67,7 +67,7 @@
 .bar {
   height: 3px;
   width: 25px;
-  background-color: #fff; /* Hamburger color */
+  background-color: #fff; 
   margin: 5px 0;
   border-radius: 13%;
 }
@@ -77,10 +77,10 @@
 /* Media Queries */
 @media (min-width: 1280px) {
   .desktopButton {
-    display: block; /* Show button on desktop */
+    display: block;
   }
   .hamburger {
-    display: none; /* Hide hamburger on desktop */
+    display: none; 
   }
   .container:hover,
   .container:hover .header {

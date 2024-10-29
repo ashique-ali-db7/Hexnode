@@ -5,7 +5,6 @@ import Homeblue from "./../../../Assets/images/homeline.svg";
 import chatBlue from "./../../../Assets/images/chatline.svg";
 import speakerBlue from "./../../../Assets/images/speakerline.svg";
 const Content = ({ isOpen, onClose }) => {
-  console.log("hiiii");
   return (
     <div className={`${styles.popup} ${isOpen ? styles.open : ""}`}>
       <div className={styles.popupContent}>

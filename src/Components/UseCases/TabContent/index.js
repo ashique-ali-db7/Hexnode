@@ -29,7 +29,7 @@ const TabContent = ({ activeTab }) => {
         </ul>
       </div>
       <div className={styles.imageContainer}>
-        <img src={item.image} alt="single app image" />
+        <img src={item.image} alt="App" />
       </div>
     </div>
   );

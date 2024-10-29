@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { tabs } from "../../../dummyData";
 import styles from "./tabs.module.css";
 import TabContent from "../TabContent";
