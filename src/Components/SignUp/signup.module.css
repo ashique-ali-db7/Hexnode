@@ -80,6 +80,7 @@
 }
 .paragraph a {
   color: var(--button-bg);
+  cursor: pointer;
 }
 
 /* Responsive styles */
@@ -99,34 +100,6 @@
 
   .button {
     width: 100%;
-  }
-}
-@media (max-width: 640px) {
-  .fieldContainer {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  .fieldContainer input {
-    height: 53px;
-    margin-right: 0px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    width: 340px;
-    padding: 0 10px;
-  }
-  .fieldContainer button {
-    background-color: #dd0735;
-    width: 340px;
-
-    height: 53px;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 500;
   }
 }
 
@@ -165,4 +138,39 @@
 
 .footerList li:hover {
   text-decoration: underline;
+}
+@media (max-width: 640px) {
+  .fieldContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .fieldContainer input {
+    height: 53px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    width: 340px;
+    padding: 0 10px;
+  }
+  .fieldContainer button {
+    background-color: #dd0735;
+    width: 340px;
+
+    height: 53px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .footer div {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

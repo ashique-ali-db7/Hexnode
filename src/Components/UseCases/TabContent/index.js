@@ -9,21 +9,18 @@ const TabContent = ({ activeTab }) => {
         <ul>
           {item?.content?.map((val, idx) => (
             <li key={idx}>
-                 <span>
-                  <svg width="14.393" height="10.111">
-                    <path
-                      fill="none"
-                      stroke="#60c458"
-                      stroke-width="2"
-                      d="M.697 4.107 5.45 8.718l8.247-8"
-                      data-name="tick - icon"
-                    ></path>
-                  </svg>
-                </span>
-              <p>
-               
-                {val}
-              </p>
+              <span>
+                <svg width="14.393" height="10.111">
+                  <path
+                    fill="none"
+                    stroke="#60c458"
+                    stroke-width="2"
+                    d="M.697 4.107 5.45 8.718l8.247-8"
+                    data-name="tick - icon"
+                  ></path>
+                </svg>
+              </span>
+              <p>{val}</p>
             </li>
           ))}
         </ul>

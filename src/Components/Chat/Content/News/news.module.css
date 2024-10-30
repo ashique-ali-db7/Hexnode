@@ -1,0 +1,70 @@
+.fullContent {
+  height: 85%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #2e72f6;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  min-height: 48px;
+  font-size: 18px;
+  color: #fff;
+}
+.contentContainer {
+  padding-top: 20px;
+  overflow-y: scroll;
+  height: 85%;
+  padding: 20px 20px 0px 20px;
+}
+
+.subHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-radius: 8px; /* Optional rounded corners */
+}
+
+.subHeading h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+  color: #000;
+}
+
+.subHeading p {
+  margin: 4px 0 0;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+}
+
+.circleImage {
+  width: 36px; /* Adjust size as needed */
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.circleImage:hover {
+  opacity: 1;
+}
+.circleImage:not(:first-child) {
+  margin-left: -7px; /* Adjust this value to control overlap */
+}

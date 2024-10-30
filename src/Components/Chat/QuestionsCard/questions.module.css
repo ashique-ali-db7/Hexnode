@@ -1,0 +1,62 @@
+/* Card Container */
+.communityCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fff;
+
+  margin-bottom: 15px;
+}
+
+/* Header */
+.cardHeader {
+  background-color: #ffffff;
+  padding: 16px 16px 0px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+  color: #000;
+  border-radius: 10px;
+}
+
+/* Body */
+.cardBody {
+  padding: 16px;
+  text-align: left;
+}
+
+.cardTitle {
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  border-top: 1px solid #ebe8e8;
+  padding-top: 15px;
+}
+
+.cardText {
+  font-size: 14px;
+  color: #737376;
+  margin-top: 8px;
+  line-height: 1.4;
+  border-bottom: 1px solid #ebe8e8;
+  padding-bottom: 15px;
+}
+
+/* Button */
+.cardButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.cardButton:hover {
+  background-color: #0056b3;
+}

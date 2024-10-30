@@ -2,6 +2,7 @@ import styles from "./details.module.css";
 import { details } from "../../dummyData";
 import { useState } from "react";
 import useWindowSize from "../../Hooks/windowSize";
+import Arrow from "./../../Assets/images/redRightArrow.svg";
 const Details = () => {
   const [active, setActive] = useState(0);
   const [data, setData] = useState(details[0]);

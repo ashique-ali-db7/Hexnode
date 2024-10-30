@@ -4,13 +4,14 @@
   top: 20px;
   width: 400px;
   max-height: 82vh;
-  background: linear-gradient(to bottom, #2e72f6 30%, rgba(247, 247, 247, 1));
-  color: white;
+
+  color: #fff;
   border-radius: 15px;
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 10000;
   height: 100%;
+  font-family: system-ui, "Segoe UI";
 }
 
 /* .open {
@@ -23,8 +24,6 @@
   height: 100%;
 }
 
-
-
 .closeButton {
   background: none;
   border: none;
@@ -32,18 +31,6 @@
   font-size: 18px;
   cursor: pointer;
 }
-
-.messageButton {
-  background-color: #fff;
-  color: #1e81f7;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-
 
 .footer {
   margin-top: auto;
@@ -54,7 +41,9 @@
   height: 15%;
   z-index: 2;
   background-color: #fff;
-  border-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .footer button {
@@ -68,6 +57,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.blueColor {
+  color: #2e72f6 !important;
 }
 .footer button img {
   margin-bottom: 3px;
