@@ -7,8 +7,10 @@
 4.npm start
 
 ## Approach
-The project was designed with a responsive-first approach to ensure it adapts to various screen sizes.
-Media queries and flexible CSS layouts were used to accommodate different device widths for an optimal user experience.
+The project was designed with a responsive-first approach to ensure it adapts to various screen sizes.  
+Media queries and flexible CSS layouts were used to accommodate different device widths for an optimal user experience.  
+Organized seperate stylesheet files for components.  
+
 
 ## Challenges faced
 Main challenges was creating layouts that work seamlessly across various screen sizes. Ensuring consistency while adjusting layouts.
