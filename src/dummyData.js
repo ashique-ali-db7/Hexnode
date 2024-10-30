@@ -28,10 +28,10 @@ import Apple from "./Assets/images/supports/apple-tv.svg";
 import Ios from "./Assets/images/supports/ios.svg";
 import Windows from "./Assets/images/supports/windows.svg";
 
-import chrome from "./Assets/images/chrome.jpg";
-import microsoft from "./Assets/images/MicrosoftTeams-image (43).png";
-import pengin from "./Assets/images/pengin.jpg";
-import system from "./Assets/images/system.jpg";
+import Chrome from "./Assets/images/chrome.jpg";
+import Microsoft from "./Assets/images/MicrosoftTeams-image (43).png";
+import Pengin from "./Assets/images/pengin.jpg";
+import System from "./Assets/images/system.jpg";
 import AppleChat from "./Assets/images/apple.jpg";
 
 export const tabs = [
@@ -181,35 +181,36 @@ export const chatData = [
     type: "Desktop",
     heading: "Expanding capabilities: ChromeOS support is here!",
     text: "We’re excited to announce the launch of ChromeOS support in Hexnode!",
-    image: chrome,
+    image: Chrome,
   },
   {
     type: "Desktop",
     heading: "Introducing Linux management with Hexnode",
     text: "We are excited to announce that Hexnode now supports Linux management!",
-    image: pengin,
+    image: Pengin,
   },
   {
     type: "Desktop",
     heading: "Introducing Custom Reports. Your data, your way!e",
     text: "We are thrilled to introduce Custom Reports in Hexnode!",
-    image: system,
+    image: System,
   },
   {
     type: "Update",
     heading: "Say hello to the revamped Hexnode Connect!",
     text: "We're excited to announce some major additions to Hexnode Connect, your go-to hub for all things Hexnode.",
-    image: microsoft,
-  },{
+    image: Microsoft,
+  },
+  {
     type: "Desktop",
     heading: "Expanding capabilities: ChromeOS support is here!",
     text: "We’re excited to announce the launch of ChromeOS support in Hexnode!",
-    image: chrome,
+    image: Chrome,
   },
   {
     type: "Desktop",
     heading: "Introducing Linux management with Hexnode",
     text: "We are excited to announce that Hexnode now supports Linux management!",
-    image: pengin,
+    image: Pengin,
   },
 ];

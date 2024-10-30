@@ -15,3 +15,17 @@ input:focus {
 .no-scroll {
   overflow: hidden;
 }
+@media (min-width: 640px) {
+  h1 {
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 40px;
+  }
+}
+@media (max-width: 640px) {
+  h1 {
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 32px;
+  }
+}

@@ -11,8 +11,7 @@
   align-items: center;
 }
 .detailsWrapper h1 {
-  font-size: 40px;
-  font-weight: 700;
+
   margin-bottom: 50px;
   line-height: 40px;
   max-width: 800px;
@@ -20,7 +19,7 @@
 .content {
   display: flex;
   cursor: pointer;
-  border-bottom: 1px solid #f7f7f7; 
+  border-bottom: 1px solid #f7f7f7;
   margin-bottom: 16px 0;
 }
 .contentWrapper {
@@ -48,7 +47,7 @@
 .textWrapper {
   text-align: left;
   width: 100%;
-  border-bottom: 1px solid #f7f7f7; 
+  border-bottom: 1px solid #f7f7f7;
 }
 #free {
   color: var(--button-bg);
@@ -94,7 +93,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #f7f7f7; 
+    border-bottom: 1px solid #f7f7f7;
   }
   .content img {
     width: 340px;

@@ -51,7 +51,6 @@ function SimpleSlider() {
     autoplaySpeed: 7000,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
-  
   };
 
   return (
