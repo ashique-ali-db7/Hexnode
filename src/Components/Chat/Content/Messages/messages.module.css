@@ -8,7 +8,7 @@
   display: flex;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  background-color: #2e72f6;
+  background-color: var(--chat-bg);;
   height: 64px;
   justify-content: center;
   align-items: center;
@@ -65,7 +65,7 @@
   line-height: 20px;
   color: inherit;
   font-weight: 600;
-  background-color: #2e72f6;
+  background-color: var(--chat-bg);;
   color: #fff;
   border: none;
   position: absolute;

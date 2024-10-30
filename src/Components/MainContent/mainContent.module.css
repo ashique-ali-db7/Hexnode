@@ -1,4 +1,3 @@
-
 .firstContainer,
 .innerContainer {
   background-color: var(--dark-bg);
@@ -155,7 +154,7 @@
     padding: 0 10px;
   }
   .fieldContainer button {
-    background-color: #dd0735;
+    background-color: var(--button-bg);
     width: 340px;
 
     height: 53px;
@@ -181,7 +180,7 @@
   }
   .secondContainer {
     height: auto;
-    background-color: #1a1c2b;
+    background-color: var(--secondary-bg);
     padding: 0px 0px;
   }
 }
@@ -203,7 +202,7 @@
     padding: 0 10px;
   }
   .fieldContainer button {
-    background-color: #dd0735;
+    background-color: var(--button-bg);
     width: 340px;
 
     height: 53px;

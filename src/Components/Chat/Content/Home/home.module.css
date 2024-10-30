@@ -46,5 +46,5 @@
   line-height: 150%;
 }
 .send:hover {
-  color: #2e72f6;
+  color: var(--chat-bg);;
 }

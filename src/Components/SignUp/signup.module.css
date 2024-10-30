@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #020a19;
+  background-color: var(--dark-bg);
 }
 
 .innerContainer {
@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #020a19;
+  background-color: var(--dark-bg);
   color: #ffffff;
   text-align: center;
 }
@@ -43,7 +43,7 @@
 }
 
 .fieldContainer button {
-  background-color: #dd0735;
+  background-color: var(--button-bg);
   width: 210px;
   font-size: 17px;
   color: white;
@@ -156,7 +156,7 @@
     padding: 0 10px;
   }
   .fieldContainer button {
-    background-color: #dd0735;
+    background-color: var(--button-bg);
     width: 340px;
 
     height: 53px;

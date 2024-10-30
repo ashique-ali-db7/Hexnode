@@ -9,7 +9,7 @@
   display: flex;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  background-color: #2e72f6;
+  background-color: var(--chat-bg);
   height: 64px;
   justify-content: center;
   align-items: center;
