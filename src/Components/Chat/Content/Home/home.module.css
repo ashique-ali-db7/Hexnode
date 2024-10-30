@@ -1,5 +1,9 @@
 .fullContent {
-  background: linear-gradient(to bottom, #2e72f6 50%, rgba(247, 247, 247, 1));
+  background: linear-gradient(
+    to bottom,
+    #2e72f6 40%,
+    rgba(247, 247, 247, 1) 80%
+  );
   height: 85%;
   overflow-y: scroll;
 
@@ -42,9 +46,8 @@
   font-weight: 600;
   cursor: pointer;
   padding: 16px 20px;
-  margin: 20px 0px 15px 0px;
-  line-height: 150%;
+  margin: 15px 0px 15px 0px;
 }
 .send:hover {
-  color: var(--chat-bg);;
+  color: var(--chat-bg);
 }
