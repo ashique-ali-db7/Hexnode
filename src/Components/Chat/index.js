@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./chat.module.css";
 import ChatIcon from "./../../Assets/images/popupIcon.png";
 import Content from "./Content";
+import Down from "./../../Assets/images/downArrow.svg";
 const Popup = () => {
   const [isPopupOpen, setPopupOpen] = useState(false);
   useEffect(() => {
@@ -27,7 +28,7 @@ const Popup = () => {
   return (
     <div>
       <button className={styles.toggleButton} onClick={togglePopup}>
-        <img src={ChatIcon} alt="icon" />
+        <img src={isPopupOpen ? Down : ChatIcon} alt="icon" />
       </button>
       {isPopupOpen && <Content />}
     </div>

@@ -10,7 +10,7 @@
 }
 .details h2 {
   padding-bottom: 0px 0px 40px;
- 
+
   margin: 0;
 }
 .details ul {
@@ -54,5 +54,11 @@
   }
   .imageContainer img {
     width: 460px;
+  }
+}
+
+@media (max-width: 640px) {
+  .details p {
+    font-size: 16px;
   }
 }

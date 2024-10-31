@@ -103,28 +103,34 @@ export const details = [
     image: DetailsImage,
     description:
       "Deploy kiosk-enabled devices straight out of the box. Flash a custom Android Enterprise, Samsung Knox or ROM with Hexnode App on the devices by collaborating with OEM vendors who provide specially configured ROMs.",
+    featureDetails: { position: 15, name: "Zero touch kiosk" },
   },
   {
     title: "Customized interface for brand visibility",
     image: Customized,
     description:
       "Create a locked-down environment with customized interface. Maximize brand visibility and leave a lasting impression by showcasing products, services and key messages directly to users through the customized interface.",
+    featureDetails: { position: 70, name: "Brand visibility" },
   },
+
   {
     title: "What more can you do with Hexnode kiosk?",
     image: Power,
     description:
       "Ensure compliance of your devices by remotely deploying the latest OS version while the device is still in kiosk mode. Prevent your data from falling into the wrong hands even in case of device loss/theft with the various remote management features.",
+    featureDetails: { position: 55, name: "Data security" },
   },
   {
     title: "Secure and update your app ecosystem",
     image: Secure,
+    featureDetails: { position: 80, name: "App managment" },
     description:
       "Streamline the deployment and management on apps on your kiosk devices. Save your time and effort, ensure security and improve your efficiency using Hexnode’s silent app installation and update features.",
   },
   {
     title: "Provide an easy-to-use interface for end-users",
     image: Easy,
+    featureDetails: { position: 50, name: "Easy to use interface" },
     description:
       "Give your end-users the power to control their devices without overwhelming them with options. An intuitive interface to let them access only the essential settings they need. Make it easy for them to unlock the full potential of your devices hassle-free.",
   },

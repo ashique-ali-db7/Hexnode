@@ -1,3 +1,14 @@
+@keyframes slideInBottom {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -22,22 +33,29 @@
   margin-bottom: 16px 0;
 }
 .contentWrapper {
-  width: 55%;
+  width: 50%;
 }
 .imageWrapper {
-  width: 45%;
-
+  width: 50%;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 30px;
+  padding-right: 60px;
 }
+.featureHovered {
+  transform: translateY(-10%);
+}
+
 .imageWrapper img {
   width: 100%;
   max-height: 565px;
-  height: 565px;
+  height: auto;
   border-radius: 10px;
+  animation: slideInBottom 0.3s ease-out forwards;
+  animation-fill-mode: forwards; /* Ensure final position is kept */
+  opacity: 0; /* Start with opacity 0 */
 }
 .dataWrapper {
   display: flex;
@@ -52,6 +70,11 @@
   color: var(--button-bg);
   font-size: 16px;
   font-weight: 600;
+}
+#free img {
+  width: "7px";
+  height: "11px";
+  margin-left: "4px";
 }
 .content img {
   width: 100%;
@@ -68,6 +91,33 @@
   line-height: 28px;
   font-weight: 400;
   font-size: 18px;
+}
+.feature {
+  position: absolute;
+  padding: 15px 20px 15px 15px;
+  z-index: 2;
+  overflow: hidden;
+  justify-content: center;
+  align-items: flex-start;
+  right: 34px;
+  border: 1px solid #e5e7eb;
+  background-color: #e8e8ed;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    rgba(232, 232, 237, 1) 75%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-style: solid;
+}
+.feature span {
+  /* margin: 0;
+  padding: 0; */
+  font-size: 18px;
+  font-weight: 600;
+}
+.tick {
+  margin-right: 15px;
 }
 @media (max-width: 990px) {
   .displayNone {
@@ -104,6 +154,18 @@
   .textWrapper {
     text-align: left;
     width: 100%;
+  }
+  .feature {
+    padding: 4px 10px 4px 10px;
+    border-radius: 5px;
+    right: -10px;
+  }
+  .feature span {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .tick {
+    margin-right: 10px;
   }
 }
 @media (max-width: 640px) {
