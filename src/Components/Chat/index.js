@@ -8,9 +8,7 @@ const Popup = () => {
   const [isPopupOpen, setPopupOpen] = useState(false);
   useEffect(() => {
     const handleKeyDown = (event) => {
-      if (event.key === "Enter") {
-        setPopupOpen(true);
-      } else if (event.key === "Escape") {
+      if (event.key === "Escape") {
         setPopupOpen(false);
       }
     };
