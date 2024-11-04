@@ -27,7 +27,7 @@ const Tabs = ({ activeTab, setActiveTab, isMobile }) => {
                 tab.id === activeTab ? styles.activeTab : ""
               }`}
               onClick={() => handleAccordionClick(tab.id)}
-              aria-expanded="true"
+              aria-expanded={tab.id === activeTab ? "true" : "false"}
             >
               {tab.title}
               {isMobile && (

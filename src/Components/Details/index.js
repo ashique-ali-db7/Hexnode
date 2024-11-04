@@ -55,6 +55,7 @@ const Details = () => {
                 className={styles.content}
                 key={idx}
                 onClick={() => clickHandler(idx, item)}
+                aria-expanded={active === idx ? "true" : "false"}
               >
                 {width <= 990 && (
                   <div style={{ position: "relative" }}>
