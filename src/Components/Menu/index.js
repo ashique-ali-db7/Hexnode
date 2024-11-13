@@ -12,7 +12,7 @@ const Menu = ({ isMenuOpen, setMenuOpen }) => {
       {isMenuOpen && width <= 1280 && (
         <>
           <div className={styles.overlay} onClick={handleClose}>
-            <nav className={styles.mobileMenu}>
+            <nav className={styles.mobileMenu} onClick={(e)=>e.stopPropagation()}>
               <div className={styles.topPart}>
                 <img
                   src={closeIcon}

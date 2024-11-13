@@ -3,7 +3,31 @@ import desktopImage from "./../../Assets/images/hexnode-kiosk.webp";
 import idc from "./../../Assets/images/idc.webp";
 import gartner from "./../../Assets/images/gartner.webp";
 import forrester from "./../../Assets/images/forrester.webp";
+import { useState } from "react";
 const MainContent = () => {
+  const [email, setEmail] = useState("")
+  const [error, setError] = useState("")
+
+  function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
+  const startHandler = () => {
+    if (email) {
+      if (isValidEmail(email)) {
+        setError("");
+
+      } else {
+        setError("Please enter a valid email address!");
+      }
+    } else {
+      setError("Please enter your work email!");
+    }
+    setTimeout(() => {
+      setError("")
+    }, 1500)
+  };
   return (
     <>
       <div className={styles.firstContainer}>
@@ -12,9 +36,16 @@ const MainContent = () => {
             <h2>
               Turn your devices into kiosks in a few minutes with Hexnode UEM
             </h2>
+
             <div className={styles.fieldContainer}>
-              <input type="text" placeholder="Your Work Email" />
-              <button>GET STARTED NOW!</button>
+              <input type="text" placeholder="Your Work Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <button onClick={startHandler}>GET STARTED NOW!</button>
+
+            </div>
+            <div className={styles.errorMessageContainer}>
+              <span className={`${styles.errorMessage} ${error ? styles.showError : ""}`}>
+                {error}
+              </span>
             </div>
           </div>
 

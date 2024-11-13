@@ -71,3 +71,6 @@
   position: absolute;
   bottom: 20px;
 }
+.contentContainer button:hover {
+  background-color: #5F93F8;
+}

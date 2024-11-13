@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 90px 0px;
+  padding: 120px 0px;
 }
 .innerContainer {
   width: 88%;
@@ -39,6 +39,9 @@
   }
   .imageContainer {
     padding: 0 10px;
+  }
+  .container {
+    padding: 60px 0px;
   }
 }
 

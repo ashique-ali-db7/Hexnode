@@ -5,7 +5,7 @@
   width: 88%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 85px;
+  margin-top: 65px;
 }
 
 /* Gradient effect for edges */
@@ -51,4 +51,10 @@
 
 .imageContainer img:hover {
   transform: scale(1.05);
+}
+@media (max-width: 1140px) {
+  .sliderContainer {
+  
+    margin-top: 95px;
+  }
 }
