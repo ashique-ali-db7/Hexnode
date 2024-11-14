@@ -40,7 +40,7 @@ const Header = ({ setMenuOpen }) => {
               className={styles.logo}
             />
 
-            <button className={styles.desktopButton}>14 DAY FREE TRIAL</button>
+            <button className={styles.desktopButton} >14 DAY FREE TRIAL</button>
             <div className={styles.hamburger} onClick={toggleMenu}>
               <div
                 className={`${styles.bar} ${

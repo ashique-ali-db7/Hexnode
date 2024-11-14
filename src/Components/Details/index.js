@@ -55,7 +55,14 @@ const Details = () => {
                 className={styles.content}
                 key={idx}
                 onClick={() => clickHandler(idx, item)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    clickHandler(idx, item);
+                  }
+                }}
                 aria-expanded={active === idx ? "true" : "false"}
+                tabIndex="0"
+                role="button"
               >
                 {width <= 990 && (
                   <div style={{ position: "relative" }}>

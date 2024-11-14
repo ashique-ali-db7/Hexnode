@@ -11,19 +11,14 @@ const Signup = () => {
   }
 
   const startHandler = () => {
-    if (email) {
-      if (isValidEmail(email)) {
-        setError("");
-
-      } else {
-        setError("Please enter a valid email address!");
-      }
-    } else {
+    if (!email) {
       setError("Please enter your work email!");
+    } else if (!isValidEmail(email)) {
+      setError("Please enter a valid email address!");
+    } else {
+      setError("");
     }
-    setTimeout(() => {
-      setError("")
-    }, 1500)
+    setTimeout(() => setError(""), 1500);
   };
   return (
     <div className={styles.container}>
